@@ -706,8 +706,8 @@
                       <h5 class="title-left">Send Message Us</h5>
                     </div>
                     <div>
-                      <form action="mailto:am.antor11@gmail.com?subject=subject&message=message" method="post"
-                        role="form" class="php-email-form">
+                      <form action="https://formsubmit.co/am.antor11@gmail.com" method="POST" role="form"
+                        class="email-form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -729,7 +729,7 @@
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                              <textarea class="form-control" name="message" id='message' rows="5" placeholder="Message"
                                 required></textarea>
                             </div>
                           </div>
@@ -741,7 +741,8 @@
                             </div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">
+                            <button onclick="handleSubmit" type="submit"
+                              class="button button-a button-big button-rouded">
                               Send Message
                             </button>
                           </div>
